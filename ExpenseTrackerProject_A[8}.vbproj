@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>ExpenseTrackerProject_A_8_</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>ExpenseTrackerProject_A_8_.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>

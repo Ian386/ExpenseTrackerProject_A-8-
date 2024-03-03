@@ -31,7 +31,7 @@ Partial Class Form5
         lbStartDate = New Label()
         txtStartDate = New TextBox()
         lbEndDate = New Label()
-        TextBox1 = New TextBox()
+        txtEndDate = New TextBox()
         lbChooseWallet = New Label()
         cbChooseWalllet = New ComboBox()
         btnGoBackHome = New Button()
@@ -56,7 +56,7 @@ Partial Class Form5
         lbBudgetName.Name = "lbBudgetName"
         lbBudgetName.Size = New Size(134, 25)
         lbBudgetName.TabIndex = 0
-        lbBudgetName.Text = "Budget Name "
+        lbBudgetName.Text = "Budget Name:"
         ' 
         ' txtEnterBudgetName
         ' 
@@ -64,7 +64,6 @@ Partial Class Form5
         txtEnterBudgetName.Name = "txtEnterBudgetName"
         txtEnterBudgetName.Size = New Size(210, 31)
         txtEnterBudgetName.TabIndex = 1
-        txtEnterBudgetName.Text = "Enter Budget Name"
         ' 
         ' lbAmount
         ' 
@@ -72,9 +71,9 @@ Partial Class Form5
         lbAmount.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbAmount.Location = New Point(22, 185)
         lbAmount.Name = "lbAmount"
-        lbAmount.Size = New Size(81, 25)
+        lbAmount.Size = New Size(86, 25)
         lbAmount.TabIndex = 2
-        lbAmount.Text = "Amount"
+        lbAmount.Text = "Amount:"
         ' 
         ' txtBudgetAmount
         ' 
@@ -82,7 +81,6 @@ Partial Class Form5
         txtBudgetAmount.Name = "txtBudgetAmount"
         txtBudgetAmount.Size = New Size(210, 31)
         txtBudgetAmount.TabIndex = 3
-        txtBudgetAmount.Text = "Amount"
         ' 
         ' lbTimeRange
         ' 
@@ -90,9 +88,9 @@ Partial Class Form5
         lbTimeRange.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbTimeRange.Location = New Point(22, 337)
         lbTimeRange.Name = "lbTimeRange"
-        lbTimeRange.Size = New Size(113, 25)
+        lbTimeRange.Size = New Size(118, 25)
         lbTimeRange.TabIndex = 4
-        lbTimeRange.Text = "Time Range"
+        lbTimeRange.Text = "Time Range:"
         ' 
         ' cbTimeRange
         ' 
@@ -109,9 +107,9 @@ Partial Class Form5
         lbStartDate.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbStartDate.Location = New Point(22, 414)
         lbStartDate.Name = "lbStartDate"
-        lbStartDate.Size = New Size(97, 25)
+        lbStartDate.Size = New Size(102, 25)
         lbStartDate.TabIndex = 6
-        lbStartDate.Text = "Start date"
+        lbStartDate.Text = "Start date:"
         ' 
         ' txtStartDate
         ' 
@@ -119,6 +117,7 @@ Partial Class Form5
         txtStartDate.Name = "txtStartDate"
         txtStartDate.Size = New Size(210, 31)
         txtStartDate.TabIndex = 7
+        txtStartDate.Text = "yyyy-MM-dd"
         ' 
         ' lbEndDate
         ' 
@@ -126,16 +125,17 @@ Partial Class Form5
         lbEndDate.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbEndDate.Location = New Point(33, 499)
         lbEndDate.Name = "lbEndDate"
-        lbEndDate.Size = New Size(87, 25)
+        lbEndDate.Size = New Size(92, 25)
         lbEndDate.TabIndex = 8
-        lbEndDate.Text = "End date"
+        lbEndDate.Text = "End date:"
         ' 
-        ' TextBox1
+        ' txtEndDate
         ' 
-        TextBox1.Location = New Point(191, 496)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(210, 31)
-        TextBox1.TabIndex = 9
+        txtEndDate.Location = New Point(191, 496)
+        txtEndDate.Name = "txtEndDate"
+        txtEndDate.Size = New Size(210, 31)
+        txtEndDate.TabIndex = 9
+        txtEndDate.Text = "yyyy-MM-dd"
         ' 
         ' lbChooseWallet
         ' 
@@ -143,9 +143,9 @@ Partial Class Form5
         lbChooseWallet.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbChooseWallet.Location = New Point(22, 262)
         lbChooseWallet.Name = "lbChooseWallet"
-        lbChooseWallet.Size = New Size(130, 25)
+        lbChooseWallet.Size = New Size(135, 25)
         lbChooseWallet.TabIndex = 10
-        lbChooseWallet.Text = "Choose wallet"
+        lbChooseWallet.Text = "Choose wallet:"
         ' 
         ' cbChooseWalllet
         ' 
@@ -196,7 +196,7 @@ Partial Class Form5
         ' lbBasics
         ' 
         lbBasics.AutoSize = True
-        lbBasics.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbBasics.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         lbBasics.Location = New Point(513, 76)
         lbBasics.Name = "lbBasics"
         lbBasics.Size = New Size(64, 25)
@@ -236,7 +236,7 @@ Partial Class Form5
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(847, 76)
         Label3.Name = "Label3"
         Label3.Size = New Size(149, 25)
@@ -246,7 +246,7 @@ Partial Class Form5
         ' lbHealthCare
         ' 
         lbHealthCare.AutoSize = True
-        lbHealthCare.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbHealthCare.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         lbHealthCare.Location = New Point(513, 359)
         lbHealthCare.Name = "lbHealthCare"
         lbHealthCare.Size = New Size(112, 25)
@@ -256,7 +256,7 @@ Partial Class Form5
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(847, 359)
         Label2.Name = "Label2"
         Label2.Size = New Size(144, 25)
@@ -292,7 +292,7 @@ Partial Class Form5
         Controls.Add(btnGoBackHome)
         Controls.Add(cbChooseWalllet)
         Controls.Add(lbChooseWallet)
-        Controls.Add(TextBox1)
+        Controls.Add(txtEndDate)
         Controls.Add(lbEndDate)
         Controls.Add(txtStartDate)
         Controls.Add(lbStartDate)
@@ -317,7 +317,7 @@ Partial Class Form5
     Friend WithEvents lbStartDate As Label
     Friend WithEvents txtStartDate As TextBox
     Friend WithEvents lbEndDate As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtEndDate As TextBox
     Friend WithEvents lbChooseWallet As Label
     Friend WithEvents cbChooseWalllet As ComboBox
     Friend WithEvents btnGoBackHome As Button
