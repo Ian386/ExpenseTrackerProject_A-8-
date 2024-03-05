@@ -157,7 +157,7 @@ Partial Class Form5
         ' 
         ' btnGoBackHome
         ' 
-        btnGoBackHome.Location = New Point(33, 596)
+        btnGoBackHome.Location = New Point(94, 596)
         btnGoBackHome.Name = "btnGoBackHome"
         btnGoBackHome.Size = New Size(106, 47)
         btnGoBackHome.TabIndex = 12
@@ -185,7 +185,9 @@ Partial Class Form5
         ' 
         ' clbBasics
         ' 
+        clbBasics.BackColor = SystemColors.Control
         clbBasics.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clbBasics.ForeColor = SystemColors.WindowText
         clbBasics.FormattingEnabled = True
         clbBasics.Items.AddRange(New Object() {"Food & Drinks", "Bill", "Transport", "House Rent", "Fix & Maintenance", "Utilities", "Groceries"})
         clbBasics.Location = New Point(513, 115)
@@ -205,7 +207,9 @@ Partial Class Form5
         ' 
         ' clbEnjoyments
         ' 
+        clbEnjoyments.BackColor = SystemColors.Control
         clbEnjoyments.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clbEnjoyments.ForeColor = SystemColors.WindowText
         clbEnjoyments.FormattingEnabled = True
         clbEnjoyments.Items.AddRange(New Object() {"Entertainment", "Fashion", "Travel", "Beauty Care", "Party", "Gift", "Donation"})
         clbEnjoyments.Location = New Point(847, 115)
@@ -215,7 +219,9 @@ Partial Class Form5
         ' 
         ' clbHealthCare
         ' 
+        clbHealthCare.BackColor = SystemColors.Control
         clbHealthCare.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clbHealthCare.ForeColor = SystemColors.WindowText
         clbHealthCare.FormattingEnabled = True
         clbHealthCare.Items.AddRange(New Object() {"Doctor", "Sport", "Insurance", "Gym Membership"})
         clbHealthCare.Location = New Point(513, 399)
@@ -225,7 +231,9 @@ Partial Class Form5
         ' 
         ' clbOtherExpenses
         ' 
+        clbOtherExpenses.BackColor = SystemColors.Control
         clbOtherExpenses.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clbOtherExpenses.ForeColor = SystemColors.WindowText
         clbOtherExpenses.FormattingEnabled = True
         clbOtherExpenses.Items.AddRange(New Object() {"Fee & charge", "Investments", "Kids", "Other"})
         clbOtherExpenses.Location = New Point(847, 399)
@@ -277,6 +285,7 @@ Partial Class Form5
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1084, 680)
         Controls.Add(Label4)
         Controls.Add(Label2)
